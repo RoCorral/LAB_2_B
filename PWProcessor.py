@@ -55,7 +55,7 @@ is increased by 1. If it does not then it is inserted into the dic and also link
 as the new head with a head.next pointing to the old head of the list for sorting later.
 '''
 
-def readfileDic(file):
+def readfileDic(file):				# instead of re-encoding the nodes as UTF-8 you could use a try and catch method to catch any charater that is not able to be regonized
 	pws = open(file,'r+',encoding="UTF-8")
 	pwList = {}
 	head =None
